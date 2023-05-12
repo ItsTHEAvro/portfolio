@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.logo-bg {
+  width: 70px;
+  height: 70px;
+  background: #394867;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-text {
+  font-family: "Arimo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.site-header {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.site-header ul {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+}
+.site-header ul li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+.site-header ul li a {
+  text-decoration: none;
+}
+.nav-item {
+  display: flex;
+}
+.nav-home {
+  grid-column: 2/3;
+}
+.nav-about-me {
+  grid-column: 3/4;
+}
+.nav-projects {
+  grid-column: 4/5;
+}
+.nav-site-logo {
+  grid-column: 5/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-skills {
+  grid-column: 8/9;
+}
+.nav-contact-me {
+  grid-column: 9/10;
+  width: 7rem;
+  height: 2rem;
+  background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-contact-me a {
+  font-weight: bold;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 100vw;
+}
+
+#home-text {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-heading {
+  margin: 0.5rem 0;
+}
+
+.home-heading-sub {
+  font-weight: 400;
+}
+
+.home-paragraph {
+  line-height: 1.5rem;
+}
+
+.highlight-text {
+  font-weight: bold;
+  color: #fc4f00;
+}
+
+.btn-hire-me {
+  background-color: #fc4f00;
+  color: #fff;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#home-avatar {
+  grid-column: 6 / span 3;
+  grid-row: 2 / span 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
