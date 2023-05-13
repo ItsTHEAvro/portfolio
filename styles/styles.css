@@ -5,11 +5,13 @@
 }
 
 body {
-  font-family: "Quicksand";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+}
+
+main {
+  padding: 0 10rem;
 }
 
 .logo-bg {
@@ -91,11 +93,13 @@ body {
 #home {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  width: 100vw;
+  grid-template-rows: 1fr auto auto auto auto auto;
+  width: 100%;
+  padding-top: 3rem;
+  margin: 2rem auto;
 }
 
-#home-text {
+.home-text {
   grid-column: 2 / span 3;
   grid-row: 3 / span 3;
   display: flex;
@@ -132,7 +136,7 @@ body {
   text-decoration: none;
 }
 
-#home-avatar {
+.home-avatar {
   grid-column: 6 / span 3;
   grid-row: 2 / span 7;
   display: flex;
@@ -143,5 +147,91 @@ body {
 .avatar {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.avatar-container {
+  background: linear-gradient(30deg, #e6deda 0%, #00b4db 100%);
+  padding: 3rem 0 0 0;
+  border-radius: 10px;
+}
+
+#about-me {
+  margin: 2rem auto;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr auto auto auto auto auto;
+  width: 100%;
+}
+
+.about-me-img {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 3;
+}
+
+.about-me-img img {
+  border-radius: 10px;
+  display: block;
+  max-width: 85%;
+  height: auto;
+}
+
+.about-me-text {
+  grid-column: 6 / span 3;
+  grid-row: 2 / span 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.about-me-body {
+  padding: 1rem 0;
+  line-height: 1.5rem;
+}
+
+#projects {
+  padding: 0 9rem;
+  text-align: center;
+}
+
+.projects-showcase {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 15rem;
+  height: 20rem;
+  padding: 0 0 1rem 0;
+  margin: 1.5rem 0.5rem;
+  background-color: #efefef;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 5px;
+}
+
+.project-card a {
+  text-decoration: none;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #394867;
+  padding: 0.5rem;
+}
+
+.project-desc {
+  line-height: 1.5rem;
+  text-align: left;
+  padding: 0 1rem;
 }
